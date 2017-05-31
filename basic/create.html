@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rectangle</title>
+  <style>
+    svg {
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ccc;
+    }
+    rect {
+      stroke-width: 1;
+      stroke:steelblue;
+      fill:#888;
+      fill-opacity: .5;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8">
+  </script>
+  <script>
+    var svg = d3.select("body")
+        .append("svg")
+        .attr("width",400)
+        .attr("height",400);
+    svg.selectAll('rect').data([1,2,3]).enter()
+        .append('rect')
+        .attr('x',function(d){ return 100+d*40;})
+        .attr('y',200)
+        .attr('width',40)
+        .attr('height',function(d){ return d*50});
+  </script>
+</body>
+</html>
