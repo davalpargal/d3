@@ -21,7 +21,10 @@
 //    			.attr('height', 55);
 d3.select("body")
 	.selectAll("p")
-  .data([4, 8, 15, 16, 23, 42]).enter().append("p")
+  .data([4, 8, 15, 16, 23, 42])
+  .text(function(d) { return "Check" + d; })
+  .enter()
+  .append("p")
   .text(function(d) { return "Check" + d; });
 
        </script>
