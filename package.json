@@ -1,0 +1,22 @@
+{
+  "name": "d3",
+  "version": "1.0.0",
+  "description": "Examples of d3.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davalpargal/d3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davalpargal/d3/issues"
+  },
+  "homepage": "https://github.com/davalpargal/d3#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  }
+}
