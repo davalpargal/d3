@@ -18,5 +18,8 @@
   "homepage": "https://github.com/davalpargal/d3#readme",
   "devDependencies": {
     "eslint": "^3.19.0"
+  },
+  "dependencies": {
+    "s2-geometry": "^1.2.9"
   }
 }
